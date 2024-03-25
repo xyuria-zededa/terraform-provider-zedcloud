@@ -2,7 +2,7 @@ package schemas
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/zededa/terraform-provider-zedcloud/models"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
 )
 
 func DeviceErrorModel(d *schema.ResourceData) *models.DeviceError {

@@ -7,10 +7,10 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	api_client "github.com/zededa/terraform-provider-zedcloud/client"
-	project "github.com/zededa/terraform-provider-zedcloud/client/projects"
-	"github.com/zededa/terraform-provider-zedcloud/models"
-	zschema "github.com/zededa/terraform-provider-zedcloud/schemas"
+	api_client "github.com/xyuria-zededa/terraform-provider-zedcloud/client"
+	project "github.com/xyuria-zededa/terraform-provider-zedcloud/client/projects"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
+	zschema "github.com/xyuria-zededa/terraform-provider-zedcloud/schemas"
 )
 
 func ProjectResource() *schema.Resource {

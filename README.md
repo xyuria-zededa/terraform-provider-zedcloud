@@ -19,9 +19,9 @@ Supported resources are:
 Documentation of all API endpoints and data schemas can be found under https://zedcontrol.zededa.net/api/v1/docs/.
 
 Schema documentation generated from the schema files contained in this repo can be found under:
-1. [Provider](https://github.com/zededa/terraform-provider-zedcloud/blob/main/docs/index.md)
-1. [Resources](https://github.com/zededa/terraform-provider-zedcloud/tree/main/docs/resources)
-1. [Data Sources](https://github.com/zededa/terraform-provider-zedcloud/tree/main/docs/data-sources)
+1. [Provider](https://github.com/xyuria-zededa/terraform-provider-zedcloud/blob/main/docs/index.md)
+1. [Resources](https://github.com/xyuria-zededa/terraform-provider-zedcloud/tree/main/docs/resources)
+1. [Data Sources](https://github.com/xyuria-zededa/terraform-provider-zedcloud/tree/main/docs/data-sources)
 
 > Note, the resource schemas match the API schemas but support for some fields might be incomplete in the provider. The testdata directory contains examples with the full set of supported fields for the supported resources of the latest version deployed in the Terraform provider registry.
 
@@ -34,7 +34,7 @@ Product documentation including explanations of workflows and data schemas can b
 ## Installation and configuration
 
 Information on how to install and configure a Terraform provider can be found under https://developer.hashicorp.com/terraform/language/providers. If you need help setting up the __terraform-provider-zedcloud__ please reach out to Zededa support.
-The latest version of the provider can be found in the official Terraform provider registry under https://registry.terraform.io/providers/zededa/zedcloud/latest.
+The latest version of the provider can be found in the official Terraform provider registry under https://registry.terraform.io/providers/xyuria-zededa/zedcloud/latest.
 
 ## Breaking changes in v2
 

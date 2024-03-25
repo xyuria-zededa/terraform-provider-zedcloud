@@ -3,8 +3,8 @@ package compare
 import (
 	"testing"
 
-	"github.com/zededa/terraform-provider-zedcloud/models"
-	testhelper "github.com/zededa/terraform-provider-zedcloud/testing"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
+	testhelper "github.com/xyuria-zededa/terraform-provider-zedcloud/testing"
 )
 
 // This test code uses a table-driven approach, where each test case is represented by a struct with the necessary inputs

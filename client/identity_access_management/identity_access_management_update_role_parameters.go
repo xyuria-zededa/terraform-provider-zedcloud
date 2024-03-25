@@ -7,7 +7,7 @@ package identity_access_management
 
 import (
 	"context"
-	"github.com/zededa/terraform-provider-zedcloud/models"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
 	"net/http"
 	"time"
 

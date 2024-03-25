@@ -10,7 +10,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/zededa/terraform-provider-zedcloud/models"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
 )
 
 // HardwareModelGetGlobalHardwareBrandReader is a Reader for the HardwareModelGetGlobalHardwareBrand structure.
