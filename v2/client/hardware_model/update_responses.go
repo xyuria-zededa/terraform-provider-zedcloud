@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/v2/models"
 )
 
 // HardwareModelUpdateHardwareModelReader is a Reader for the HardwareModelUpdateHardwareModel structure.

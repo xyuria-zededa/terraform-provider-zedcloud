@@ -4,7 +4,7 @@ import (
 	"reflect"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/xyuria-zededa/terraform-provider-zedcloud/models"
+	"github.com/xyuria-zededa/terraform-provider-zedcloud/v2/models"
 )
 
 func SystemInterfaceModel(d *schema.ResourceData) *models.SystemInterface {
