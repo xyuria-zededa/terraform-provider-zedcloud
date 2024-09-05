@@ -11,4 +11,4 @@ terraform-provider-zedcloud_v*
 gen/
 terraform.log
 main.tf
-dev.tfrc
+!v2/resources/dev.tfrc
