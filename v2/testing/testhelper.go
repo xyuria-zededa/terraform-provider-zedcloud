@@ -67,7 +67,7 @@ func CheckEnv(t *testing.T) {
 		}
 	}
 
-	if v := os.Getenv("TF_VAR_zedcloud_token"); v == "" {
-		t.Fatal("TF_VAR_zedcloud_token must be set for acceptance tests to access the zedcloud API")
+	if v := os.Getenv("TF_VAR_ZEDCLOUD_TOKEN"); v == "" {
+		t.Fatal("TF_VAR_ZEDCLOUD_TOKEN must be set for acceptance tests to access the zedcloud API")
 	}
 }
