@@ -11,9 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      TF_VAR_zedcloud_token: FLa9njQ9S-vMeM98I8KqewAafewTcBajnTkyYcRX1BTGLEe64PUxHQI8DuLS4_7faipvNkl70N9P79ZrF-9yd8hPGRoIxhjKcm3ngJ9SWe8nGBr57tLeo5L6s5Sgl06ah2kIoXNjMm4UWQzfN_J45c7aTjxlGiuGr2C-w3obw28=
-      TF_VAR_zedcloud_url: zedcontrol.alpha.zededa.net
-      TF_CLI_CONFIG_FILE: dev.tfrc
+      TF_VAR_zedcloud_token: "FLa9njQ9S-vMeM98I8KqewAafewTcBajnTkyYcRX1BTGLEe64PUxHQI8DuLS4_7faipvNkl70N9P79ZrF-9yd8hPGRoIxhjKcm3ngJ9SWe8nGBr57tLeo5L6s5Sgl06ah2kIoXNjMm4UWQzfN_J45c7aTjxlGiuGr2C-w3obw28="
+      TF_VAR_zedcloud_url: "zedcontrol.alpha.zededa.net"
+      TF_CLI_CONFIG_FILE: "dev.tfrc"
 
     steps:
     - uses: actions/checkout@v4
