@@ -11,3 +11,4 @@ gen/
 terraform.log
 main.tf
 !v2/resources/dev.tfrc
+!v2/dev.tfrc
