@@ -44,7 +44,7 @@ build:
 # acceptance tests
 .PHONY: test
 test: build
-	ls -a ${HOME} && \
+	ls -a ${HOME}/go && \
 	cd v2 && \
 	TF_ACC=1 go test -v ./... && \
 	cd -
