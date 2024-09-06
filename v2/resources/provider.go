@@ -111,7 +111,7 @@ func (h *HttpTransportWrapper) RoundTrip(req *http.Request) (*http.Response, err
 
 func ProviderConfigure(ctx context.Context, d *schema.ResourceData) (interface{}, diag.Diagnostics) {
 	zedCloudURL := d.Get("zedcloud_url").(string)
-
+        panic(zedCloudURL)
 	token, tokenIsSet := d.Get("zedcloud_token").(string)
 	if !tokenIsSet || token == "" {
 		return nil, diag.FromErr(errors.New("zedcloud API key must be set"))
