@@ -43,7 +43,7 @@ build:
 
 # acceptance tests
 .PHONY: test
-test: build
+test:
 	echo "${PWD}" && \
 	cd v2 && \
 	TF_ACC=1 go test -v ./... && \
