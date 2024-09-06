@@ -53,7 +53,7 @@ test: build
 test-run: build
 	cd v2 && \
 	go vet ./... && \
-	TF_ACC=1 go test -v ./... -run $(case) && \
+	TF_ACC=1 TF_CLI_CONFIG_FILE="." go test -v ./... -run $(case) && \
 	cd -
 
 .PHONY: udpatedeps
