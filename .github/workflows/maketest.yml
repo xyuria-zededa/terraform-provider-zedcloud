@@ -22,4 +22,4 @@ jobs:
       env:
         TF_CLI_CONFIG_FILE: dev.tfrc
         TF_VAR_ZEDCLOUD_TOKEN: ${{ secrets.TF_VAR_ZEDCLOUD_TOKEN }}
-        TF_VAR_ZEDCLOUD_URL : ${{ vars.TF_VAR_zedcloud_url }}
+        TF_VAR_ZEDCLOUD_URL : ${{ vars.TF_VAR_ZEDCLOUD_URL }}
