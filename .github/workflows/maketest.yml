@@ -21,3 +21,4 @@ jobs:
       run: make test
       env:
         TF_CLI_CONFIG_FILE: dev.tfrc
+        TF_VAR_zedcloud_token: ${{ secrets.TF_VAR_ZEDCLOUD_TOKEN }}
