@@ -30,8 +30,7 @@ func Provider() *schema.Provider {
 				Type:        schema.TypeString,
 				Optional:    true,
 				Description: "ZEDCloud url. Ex: https://zedcontrol.zededa.net",
-				//Default:     defaultHost,
-				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_zedcloud_url", nil),
+				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_zedcloud_url", defaultHost),
 			},
 			"zedcloud_token": {
 				Type:        schema.TypeString,
