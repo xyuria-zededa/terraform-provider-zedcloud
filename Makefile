@@ -44,6 +44,7 @@ build:
 # acceptance tests
 .PHONY: test
 test: build
+        echo $HOME
 	cd v2 && \
 	TF_ACC=1 go test -v ./... && \
 	cd -
