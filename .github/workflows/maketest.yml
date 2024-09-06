@@ -19,3 +19,5 @@ jobs:
 
     - name: make test
       run: make test
+      env:
+        TF_CLI_CONFIG_FILE: dev.tfrc
