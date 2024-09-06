@@ -45,6 +45,7 @@ build:
 .PHONY: test
 test: build
 	cd v2 && \
+        pwd && \
 	TF_ACC=1 go test -v ./... && \
 	cd -
 
