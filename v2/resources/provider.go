@@ -30,7 +30,7 @@ func Provider() *schema.Provider {
 				Type:        schema.TypeString,
 				Optional:    true,
 				Description: "ZEDCloud url. Ex: https://zedcontrol.zededa.net",
-				Default:     defaultHost,
+				//Default:     defaultHost,
 				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_zedcloud_url", nil),
 			},
 			"zedcloud_token": {
@@ -113,6 +113,7 @@ func (h *HttpTransportWrapper) RoundTrip(req *http.Request) (*http.Response, err
 
 func ProviderConfigure(ctx context.Context, d *schema.ResourceData) (interface{}, diag.Diagnostics) {
 	zedCloudURL := d.Get("zedcloud_url").(string)
+        panic(zedCloudURL)
         if zedCloudURL == defaultHost {
           zedCloudURL = os.Getenv("TF_VAR_zedcloud_url")
           d.Set("zedcloud_url", zedCloudURL)
