@@ -1,6 +1,6 @@
 resource "zedcloud_role" "test_tf_provider" {
-  name = "test-role"
-  title = "test-role"
+  name = "test_tf_provider-test-role"
+  title = "test_tf_provider-test-role"
   type = "USER_ROLE_SYSTEM_DEFINED"
   state = "ROLE_STATE_ACTIVE"
   scopes {

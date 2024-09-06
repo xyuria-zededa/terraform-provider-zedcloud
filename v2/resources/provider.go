@@ -19,7 +19,6 @@ import (
 var (
 	version   string = "dev"
         defaultHost string = "zedcontrol.local.zededa.net"
-//        defaltToken string = ""
 )
 
 func Provider() *schema.Provider {
@@ -112,11 +111,6 @@ func (h *HttpTransportWrapper) RoundTrip(req *http.Request) (*http.Response, err
 
 func ProviderConfigure(ctx context.Context, d *schema.ResourceData) (interface{}, diag.Diagnostics) {
 	zedCloudURL := d.Get("zedcloud_url").(string)
-        panic(zedCloudURL)
-        if zedCloudURL == defaultHost {
-          zedCloudURL = os.Getenv("TF_VAR_zedcloud_url")
-          d.Set("zedcloud_url", zedCloudURL)
-        }
 	token, tokenIsSet := d.Get("zedcloud_token").(string)
 	if !tokenIsSet || token == "" {
 		return nil, diag.FromErr(errors.New("zedcloud API key must be set"))
