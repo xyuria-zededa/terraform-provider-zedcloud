@@ -29,13 +29,13 @@ func Provider() *schema.Provider {
 				Optional:    true,
 				Description: "ZEDCloud url. Ex: https://zedcontrol.zededa.net",
 				Default:     "zedcontrol.local.zededa.net",
-				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_ZEDCLOUD_URL", nil),
+				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_zedcloud_url", nil),
 			},
 			"zedcloud_token": {
 				Type:        schema.TypeString,
 				Optional:    true,
 				Description: "ZEDCloud API token",
-				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_ZEDCLOUD_TOKEN", nil),
+				DefaultFunc: schema.EnvDefaultFunc("TF_VAR_zedcloud_token", nil),
 			},
 		},
 		DataSourcesMap: map[string]*schema.Resource{
