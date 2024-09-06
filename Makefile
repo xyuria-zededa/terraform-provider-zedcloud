@@ -46,7 +46,7 @@ build:
 test:
 	echo "${PWD}" && \
 	cd v2 && \
-	TF_ACC=1 go test -v ./... && \
+	TF_ACC=1 TF_CLI_CONFIG_FILE="." go test -v ./... && \
 	cd -
 
 .PHONY: test-run
