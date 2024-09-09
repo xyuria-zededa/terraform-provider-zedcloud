@@ -87,6 +87,7 @@ func NewHttpTransportWrapper(rt http.RoundTripper) *HttpTransportWrapper {
 	if err != nil {
 		wrapper.providerVersion = "v0.0.0"
 	} else {
+           if !strings.Contains(execName, "resources.test") {
 		execNameParts := strings.Split(execName, "_")
 		if len(execNameParts) != 2 {
 			if version != "dev" {
@@ -97,6 +98,9 @@ func NewHttpTransportWrapper(rt http.RoundTripper) *HttpTransportWrapper {
 		} else {
 			wrapper.providerVersion = execNameParts[1]
 		}
+           } else {
+              wrapper.providerVersion = "v_testbuild"
+           }
 	}
 
 	return wrapper
